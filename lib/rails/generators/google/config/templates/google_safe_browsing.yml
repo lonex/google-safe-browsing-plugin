@@ -1,0 +1,16 @@
+default: &default
+  api_key: your_google_api_key
+  app_ver: 1.5.2
+  p_ver: 2.2
+  full_length_hash_expires: 86400 # 1 day
+  full_length_hash_backoff_delay: 300 # seconds
+  full_length_hash_backoff_delay_max: 7200 # seconds
+      
+development:
+  <<: *default
+
+test:
+  <<: *default
+ 
+production:
+  <<: *default
