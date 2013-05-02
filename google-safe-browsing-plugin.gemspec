@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Lonex"]
-  s.date = "2013-05-01"
+  s.date = "2013-05-02"
   s.description = "A Ruby implementation of the Google Safe Browsing v2. Rails is the dependency mainly because of the data layer."
   s.email = "stonelonely@gmail.com"
   s.extra_rdoc_files = [
