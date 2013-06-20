@@ -43,8 +43,8 @@ module Google
       
       del_chunk_ids.each do |chunk_id|
         if chunk_id.is_a?(Range)
-          chunk.each do |chunk_id|
-            SafeBrowsingShavar.where(google_safe_browsing_list_id: list_obj.id, chunk_num: chunk_id, chunk_type: chunk_type).destroy_all
+          chunk_id.each do |id|
+            SafeBrowsingShavar.where(google_safe_browsing_list_id: list_obj.id, chunk_num: id, chunk_type: chunk_type).destroy_all
           end
         else
           SafeBrowsingShavar.where(google_safe_browsing_list_id: list_obj.id, chunk_num: chunk_id, chunk_type: chunk_type).destroy_all
